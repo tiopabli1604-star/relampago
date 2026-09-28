@@ -1,0 +1,24 @@
+[project]
+name = "relampago"
+version = "0.1.0"
+description = "Lanzador universal para Windows: apps, calculadora, IA local, portapapeles, cripto y más con Alt+Espacio."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["pywebview>=5", "psutil>=5.9"]
+
+[project.scripts]
+relampago = "relampago.app:main"
+
+[project.gui-scripts]
+relampago-bg = "relampago.app:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/relampago"]

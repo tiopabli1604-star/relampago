@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>relámpago</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="caja">
+  <div id="barra">
+    <svg class="rayo" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+    <input id="q" autocomplete="off" spellcheck="false" placeholder="Escribe una app, una cuenta, ? pregunta, cb, btc, t 25m…" aria-label="Buscar">
+    <kbd id="atajo">Alt+Espacio</kbd>
+  </div>
+  <ul id="lista" role="listbox"></ul>
+  <div id="detalle" hidden></div>
+  <div id="ayuda" hidden></div>
+  <footer id="pie">
+    <span><kbd>↑</kbd><kbd>↓</kbd> moverse</span>
+    <span><kbd>↵</kbd> <b id="accion">abrir</b></span>
+    <span id="pie-alt" hidden><kbd>Ctrl</kbd><kbd>↵</kbd> <b id="alt"></b></span>
+    <span><kbd>Tab</kbd> completar</span>
+    <span><kbd>Esc</kbd> cerrar</span>
+    <span id="aviso" role="status"></span>
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
